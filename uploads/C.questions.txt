@@ -1,0 +1,24 @@
+1. What is the output of the following code snippet?
+#include <stdio.h>
+int main() {
+int x = 5;
+int y = (x++) + (++x) - (--x) + (x--);
+printf("%d", y);
+return 0;
+}
+2. Explain the concept of recursion in C. Provide an example.
+3. What is the purpose of the volatile keyword in C?
+4. Describe the difference between a structure and a union in C.
+5. What is the significance of the const keyword in C? How does it relate to pointer variables?
+6. Write a code snippet to reverse a linked list in C.
+7. Explain the concept of function pointers in C. Provide an example.
+8. What is the output of the following code snippet?
+#include <stdio.h>
+int main() {
+int arr[] = {1, 2, 3, 4, 5};
+int *ptr = (int*)(&arr + 1);
+printf("%d", *(ptr - 1));
+return 0;
+}
+
+
