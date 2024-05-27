@@ -1,11 +1,11 @@
 <?php
 $conn=mysqli_connect('localhost','root','','esms.');
 
-if(!isset( $_SESSION['trainername']) ||  $_SESSION['trainername'] == ""){
+if(!isset( $_SESSION['Trainername']) ||  $_SESSION['Trainername'] == ""){
    header("Location:");
 }
 
-$sql="SELECT * FROM availabletrainer order by trainer_id desc";
+$sql="SELECT * FROM Availabletrainer order by trainer_id desc";
 $result=mysqli_query($conn,$sql);
 $data=[];
 if(mysqli_num_rows($result) > 0){
