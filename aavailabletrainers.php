@@ -5,7 +5,7 @@ if(!isset( $_SESSION['Trainername']) ||  $_SESSION['Trainername'] == ""){
    header("Location:");
 }
 
-$sql="SELECT * FROM Availabletrainer order by trainer_id desc";
+$sql="SELECT * FROM availabletrainer order by Trainer_id desc";
 $result=mysqli_query($conn,$sql);
 $data=[];
 if(mysqli_num_rows($result) > 0){
